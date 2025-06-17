@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/salado.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Easy Health - Tu guía para una vida saludable con recetas, tips y bienestar.">
+  <title>Easy Health</title>
+  <link rel="stylesheet" href="./Easy Health_files/sheet-style.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="./Easy Health_files/ehverde.png" alt="Logo de Easy Health">
+      <div>
+        <h1>Easy Health</h1>
+        <p class="slogan">Alimentación saludable</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+        <li><a href="http://127.0.0.1:5500/dulce.html">Dulce</a></li>
+        <li><a href="http://127.0.0.1:5500/saldado.html">Salado</a></li>
+        <li><a href="http://127.0.0.1:5500/tips.html">Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <main>
+    <div class="pagina">
+      <section class="carta-1">
+        <p>Nuestras sugerencias</p>
+      </section>
+
+      <div class="contenedor-centro">
+        <div class="carrusel">
+          <div class="slides">
+            <img src="./Easy Health_files/image2.jpeg" alt="fideos">
+            <img src="./Easy Health_files/image4.jpeg" alt="croqueta">
+            <img src="./Easy Health_files/tarta.jpg" alt="tarta">
+            <img src="./Easy Health_files/taquitos.jpg" alt="taco">
+          </div>
+        </div>
+      </div>
+
+    <ul>
+        <li>Fideos capresse</li>
+        <li>Croquetas de papa</li>
+        <li>Tarta individual</li>
+        <li>Taquitos de verdura</li>
+    </ul>
+
+      <footer>
+ 
+</footer>
+    </div>
+  </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

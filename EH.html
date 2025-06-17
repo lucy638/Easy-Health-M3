@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Easy Health - Tu guía para una vida saludable con recetas, tips y bienestar.">
+  <title>Easy Health</title>
+  <link rel="stylesheet" href="./EH_files/sheet-style.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="./EH_files/ehverde.png" alt="Logo de Easy Health">
+      <div>
+        <h1>Easy Health</h1>
+        <p class="slogan">Alimentación saludable</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+        <li><a href="http://127.0.0.1:5500/dulce.html">Dulce</a></li>
+        <li><a href="http://127.0.0.1:5500/salado.html">Salado</a></li>
+        <li><a href="http://127.0.0.1:5500/tips.html">Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <main>
+    <div class="pagina">
+      <section class="carta-1">
+        <p>Nuestro objetivo:</p>
+        <p>Facilitarte los tuyos</p>
+      </section>
+
+      <div class="contenedor-centro">
+        <div class="carrusel">
+          <div class="slides">
+            <img src="./EH_files/image1.jpg" alt="receta1">
+            <img src="./EH_files/image2.jpeg" alt="recet2">
+            <img src="./EH_files/image3.jpeg" alt="recet3">
+            <img src="./EH_files/image4.jpeg" alt="recet4">
+          </div>
+        </div>
+      </div>
+
+      <section class="introdu">
+        <p>Descubrí un mundo de recetas saludables, fáciles y deliciosas para cuidar tu cuerpo sin renunciar al
+          sabor. Acá vas a encontrar opciones nutritivas para todos los gustos: desde desayunos energéticos hasta
+          cenas livianas, snacks y postres naturales.</p>
+        <p>Nuestro objetivo es ayudarte a llevar una alimentación equilibrada y consciente, con ingredientes reales,
+          accesibles, sin sacfrificar tu tiempo ni tu bolsillo. </p>
+        <p>🌿 Comer bien es un placer, y empieza hoy. ¡Sumate!</p>
+      </section>
+
+      <!-- <section class="carta-2"> -->
+        <!-- <img src="papas.jpg" alt="Papas fritas caseras" /> -->
+        <!-- <img src="Galletitas de Avena, Banana y Chocolate - CUKit.jpeg" alt="Galletitas de avena y chocolate" /> -->
+      <!-- </section> -->
+
+      
+          <footer>
+        <a class="redes soc" href="https://instagram.com/" target="_blank"> Visita nuestro Instagram
+            <!-- <img src="IMGs/LGPIG.png" alt="Logo de Instagram" title="Visita nuestro Instagram"> -->
+        </a>
+      
+    </footer>
+  
+  </div></main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
